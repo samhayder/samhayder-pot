@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Righteous', cursive; */
+
+:root {
+	--transparentPink: rgba(193, 23, 245, 0.7);
+	--mainWhite: #ffffff;
+	--mainBlack: #292f36;
+}
+
+body {
+	font-family: 'Righteous', cursive;
+	color: var(--mainBlack);
+	background: var(--mainWhite);
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*------------------------------
+            Project
+--------------------------------*/
+
+.single-project-img {
+	position: relative;
+	overflow: hidden;
+}
+.single-project-img:hover .template-icon {
+	opacity: 1;
+	visibility: visible;
+}
+
+.single-project:hover .project-img {
+	transform: scale(1.5);
+}
+
+.project-img {
+	transition: all 1.5s ease;
+}
+
+.project-link {
+	padding-top: 0rem !important;
+}
+
+.template-icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 1.5rem;
+	background: var(--transparentPink);
+	color: var(--mainWhite);
+	padding: 0.6rem 0.8rem;
+	border-top-left-radius: 1.5rem;
+	transition: all 1s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.play-icon {
+	position: relative;
+	font-size: 1.5rem;
+	color: var(--transparentPink);
+	transition: all 1s linear;
+}
+.play-icon::after {
+	position: absolute;
+	content: 'Live';
+	top: 0;
+	left: 1.6rem;
+	transition: all 1s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+.play-icon:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.git-icon {
+	position: relative;
+	font-size: 1.5rem;
+	color: var(--transparentPink);
+	transition: all 1s linear;
+}
+.git-icon::before {
+	position: absolute;
+	content: 'GitHub';
+	top: 0;
+	right: 1.6rem;
+	transition: all 1s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+.git-icon:hover::before {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*------------------------------
+            HEADER
+--------------------------------*/
