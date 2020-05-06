@@ -23,6 +23,9 @@ a {
 /*------------------------------
             Project
 --------------------------------*/
+.card.single-project {
+	height: 405px;
+}
 
 .single-project-img {
 	position: relative;
@@ -102,3 +105,7 @@ a {
 /*------------------------------
             HEADER
 --------------------------------*/
+.grid-item {
+	width: 25%;
+	height: 13%;
+}
