@@ -23,8 +23,8 @@ a {
 /*------------------------------
             Project
 --------------------------------*/
-.card.single-project {
-	height: 405px;
+.card{
+	height: 307px;
 }
 
 .single-project-img {
